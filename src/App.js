@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './github-actions.png';
 import './App.css';
 
 function App() {
@@ -7,15 +7,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Are you using <code>GitHub Actions</code> as your CI/CD ?
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://docs.github.com/en/actions"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn GitHub Actions
         </a>
       </header>
     </div>
