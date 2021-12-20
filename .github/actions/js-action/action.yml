@@ -1,0 +1,7 @@
+name: 'Custom js action'
+outputs:
+  result:
+    description: 'Is the action successful'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
