@@ -1,0 +1,9 @@
+on:
+  workflow_run:
+    workflows: [ "main" ]
+    types: [ completed ]
+jobs:
+  on-success:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Success"
