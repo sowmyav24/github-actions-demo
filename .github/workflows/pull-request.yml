@@ -1,12 +1,12 @@
-name: main
+name: pr
+
 on:
-  workflow_dispatch:
-#    inputs:
-    push:
-      branches:
-        - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  run-tests:
+  build-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
