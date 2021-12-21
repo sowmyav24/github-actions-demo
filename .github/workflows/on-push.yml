@@ -25,6 +25,12 @@ jobs:
       - uses: ./.github/actions/yaml-action/
         with:
           name: 'Demo'
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/js-action/
+        id: js-action
+        with:
+          name: 'Demo'
+      - run: echo ${{ steps.js-action.outputs.result }}
 
 #  deploy-dev:
 #    runs-on: ubuntu-latest

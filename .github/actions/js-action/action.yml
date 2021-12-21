@@ -1,4 +1,6 @@
 name: 'Custom js action'
+description: 'Demo for custom js action'
+
 outputs:
   result:
     description: 'Is the action successful'
