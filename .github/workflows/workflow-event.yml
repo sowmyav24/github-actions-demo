@@ -1,3 +1,5 @@
+name: workflow-event
+
 on:
   workflow_run:
     workflows: [ "main" ]
