@@ -5,3 +5,5 @@
 - Start react app: `yarn start`
 - Run tests: `yarn test`
 - Build minified application: `yarn build` 
+
+Creating a PR
