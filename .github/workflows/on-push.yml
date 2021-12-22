@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-concurrency: 'main'
 
 jobs:
   run-tests:
@@ -45,6 +44,7 @@ jobs:
           name: 'Custom demo'
 
   deploy-dev:
+    needs: [ run-tests, run-actions ]
     runs-on: ubuntu-latest
     steps:
       - name: Setup connection to AWS using Github Actions Role
@@ -53,7 +53,6 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_KEY }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET }}
           aws-region: ap-south-1
-#          role-to-assume: ${{ secrets.aws-role-to-assume }}
           role-duration-seconds: 3600
           role-skip-session-tagging: true
       - uses: actions/checkout@v2
