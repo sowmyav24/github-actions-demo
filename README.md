@@ -6,4 +6,4 @@
 - Run tests: `yarn test`
 - Build minified application: `yarn build` 
 
-Some changes
+Some change
