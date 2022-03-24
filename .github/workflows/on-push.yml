@@ -1,7 +1,7 @@
 name: main
 on:
   workflow_dispatch:
-    #    inputs:
+    #   inputs:
   push:
     branches:
       - main
